@@ -6,12 +6,11 @@ import {
   ElementRef,
   Renderer2
 } from "@angular/core";
-import { BehaviorSubject, Observable, fromEvent } from "rxjs";
+import { BehaviorSubject, Observable, fromEvent, timer, combineLatest } from "rxjs";
 import { debounceTime } from "rxjs/operators";
 import { MatTable } from "@angular/material";
 import { AppService } from "./app.service";
 import "rxjs/add/operator/merge";
-import { timer, combineLatest } from "rxjs";
 
 @Component({
   selector: "my-table",
